@@ -1,0 +1,46 @@
+Below is a checklist of the pertinent information an analyst (you) is to collect from the email header:
+
+- Sender email address
+- Sender IP address
+- Reverse lookup of the sender IP address
+- Email subject line
+- Recipient email address (this information might be in the CC/BCC field)
+- Reply-to email address (if any)
+- Date/time
+
+Below is a checklist of the artifacts an analyst (you) needs to collect from the email body:
+
+Any URL links (if an URL shortener service was used, then we'll need to obtain the real URL link)
+The name of the attachment
+The hash value of the attachment (hash type MD5 or SHA256, preferably the latter)
+
+
+//Email Header analysis
+1. https://toolbox.googleapps.com/apps/messageheader/analyzeheader
+2. https://mha.azurewebsites.net/
+3. https://mailheader.org/
+
+//Sender IP address checker 
+1. https://ipinfo.io/
+2. https://urlscan.io/
+3. https://talosintelligence.com/reputation
+4. https://www.url2png.com/
+5. https://www.wannabrowser.net/
+
+//Extract URL using email header
+1. https://www.convertcsv.com/url-extractor.htm
+2. https://gchq.github.io/CyberChef (extract_URLs)
+
+//Check URL & Attachement hash reputation
+1. https://www.virustotal.com/gui/
+2. https://talosintelligence.com/talos_file_reputation
+
+//Malware sandbox 
+1. https://app.any.run/
+2. https://www.hybrid-analysis.com/
+3. https://www.joesecurity.org/
+
+//Other sites
+1. https://mxtoolbox.com/
+2. https://phishtank.com/?
+3. https://www.spamhaus.org/
